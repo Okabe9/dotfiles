@@ -11,9 +11,12 @@ export DEFAULT_USER="Sergi"
 export TERM="xterm-256color"
 export ZSH=/usr/share/oh-my-zsh
 export ZSH_POWER_LEVEL_THEME=/usr/share/zsh-theme-powerlevel10k
-
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 source $ZSH_POWER_LEVEL_THEME/powerlevel10k.zsh-theme
-
+source ~/.config/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 plugins=(archlinux 
 	bundler 
 	docker 
